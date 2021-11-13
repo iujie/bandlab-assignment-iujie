@@ -49,7 +49,7 @@ function loadLocalStorage() {
         state['groupByUserId'] = last_state['groupByUserId'];
     }
 
-    return Promise.resolve()
+    return Promise.resolve();
 }
 
 /*********
@@ -127,7 +127,7 @@ async function init() {
     dom_request_posts_button.onclick = onRequestPostsButtonClick;
     dom_sort_group_form.onchange = onSortGroupFormChange;
 
-    await loadLocalStorage()
+    await loadLocalStorage();
     return arrangePosts();
 }
 
