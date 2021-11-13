@@ -146,7 +146,7 @@ async function onAudioClick(e) {
     return playAudio(response_1);
 }
 async function init() {
-    await loadAudioSamples()
+    await loadAudioSamples();
     return populateAudioList();
 }
 
