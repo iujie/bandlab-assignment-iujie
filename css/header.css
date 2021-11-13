@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/**********
+* Header
+**********/
+.header {
+    height: 32px;
+    background-color: rgb(235, 146, 14);
+    padding: 8px 24px;
+}
+
+.header a {
+    display: inline-block;
+    margin: 8px 24px 0px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header a.is-current {
+    text-decoration: underline;
+    font-size: 20px;
+}

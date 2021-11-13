@@ -1,0 +1,12 @@
+[
+    {
+    "id": 0,
+    "title": "New Wave Kit",
+    "src": "../assets/new-wave-kit.ogg"
+    },
+    {
+    "id": 1,
+    "title": "Synth Organ",
+    "src": "../assets/synth-organ.ogg"
+    }
+]

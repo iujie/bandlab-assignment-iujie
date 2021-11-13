@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
+        <link rel="stylesheet" type="text/css" href="../css/audios.css" />
+        <script defer src="../js/audios.js" type="module"></script>
+    </head>
+    <body>
+        <nav class="header">
+            <a href="/html/posts.html">Posts</a>
+            <a href="/html/audios.html" class="is-current">Audios</a>
+        </nav>
+        <section id="audio-main">
+            <h1>Play List</h1>
+            <div id="audio-list-container"></div>
+        </section>
+        <template id="audio-list-template">
+            <div class="audio-list" data-audio="${src}" data-id="${id}">
+                <h3>${title}</h3>
+                <button class="audio-play-pause"></button>
+                <button class="audio-stop"></button>
+            </div>
+        </template> 
+    </body>
+
+</html>

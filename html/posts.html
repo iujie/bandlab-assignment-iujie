@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
+        <link rel="stylesheet" type="text/css" href="../css/posts.css" />
+        <script defer src="../js/posts.js" type="module"></script>
+    </head>
+    <body>
+        <nav class="header">
+            <a href="/html/posts.html" class="is-current">Posts</a>
+            <a href="/html/audios.html">Audios</a>
+        </nav>
+        <section id="post-main">
+            <form id="sort-group-form">
+                <p>
+                    <label for="sortByTitle">Sort by title:</label>
+                    <select>
+                        <option value="asc">A-Z</option>
+                        <option value="decs">Z-A</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="groupUserId" name="groupUserId">
+                    <label for="groupUserId">Group by User ID</label><br>
+                </p>
+            </form>
+            <button id="request-posts" class="is-shown">Request Posts</button>
+            <div id="posts-container"><!--Dynamic Posts--></div>
+        </section>
+        <template id="post-card">
+            <div class="card">
+                <h3>${title}</h3>
+                <p>${body}</p>
+            </div>
+        </template>
+    </body>
+</html>
